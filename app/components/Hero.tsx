@@ -14,10 +14,12 @@ export default function Hero() {
                 I build <span className="text-yellow-400">scalable</span> full-stack web applications
             </h1>
 
-            <p className="text-slate-400 text-lg max-w-2xl">
-                Full-Stack Developer specializing in Next.js and Supabase.
-                I design secure authentication systems, role-based dashboards,
-                and deploy production-ready applications with clean architecture.
+            <p className="text-slate-400 text-lg max-w-2xl leading-relaxed">
+                Full Stack Developer with experience in Python (Django),
+                ASP.NET, Angular, and SQL-based systems.
+                I design secure backend architectures, develop responsive
+                user interfaces, and build database-driven applications
+                optimized for performance and scalability.
             </p>
 
             <div className="flex gap-4">

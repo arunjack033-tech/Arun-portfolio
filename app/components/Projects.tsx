@@ -15,19 +15,15 @@ export default function Projects() {
                 className="grid md:grid-cols-2 gap-8"
             >
                 <ProjectCard
-                    title="Ideaxplode Clone"
-                    description="Recreated a modern production-style web application using Next.js and Tailwind. Implemented responsive layout, authentication flow, and deployed using Vercel."
-                    tech="Next.js • Tailwind • Supabase • Vercel"
-                    github="#"
-                    live="#"
+                    title="Django E-Commerce Platform"
+                    description="Full-stack online shopping web application inspired by marketplace systems. Built secure user authentication, product management, cart functionality, and order processing with optimized database design."
+                    tech="Python • Django • HTML • CSS • Angular • SQL"
                 />
 
                 <ProjectCard
-                    title="Role-Based Auth System"
-                    description="Built secure authentication system with role-based dashboard routing. Implemented protected routes and session validation using Supabase."
-                    tech="Next.js • Supabase • PostgreSQL"
-                    github="#"
-                    live="#"
+                    title="Employee Management System"
+                    description="Enterprise-level employee management system developed using ASP.NET and SQL Server. Enabled secure employee data handling, attendance tracking, and salary information management with optimized stored procedures."
+                    tech="C# • ASP.NET • SQL Server • Angular • JavaScript"
                 />
             </motion.div>
         </section>
@@ -38,19 +34,15 @@ function ProjectCard({
     title,
     description,
     tech,
-    github,
-    live,
 }: {
     title: string;
     description: string;
     tech: string;
-    github: string;
-    live: string;
 }) {
     return (
         <motion.div
             whileHover={{ y: -5 }}
-            className="bg-slate-900/80 backdrop-blur p-6 rounded-2xl border border-slate-800 hover:border-yellow-400 transition-all duration-300 shadow-lg flex flex-col justify-between"
+            className="bg-slate-900/80 backdrop-blur p-6 rounded-2xl border border-slate-800 hover:border-yellow-400 transition-all duration-300 shadow-lg"
         >
             <div className="space-y-4">
                 <h3 className="text-xl font-semibold">{title}</h3>
@@ -58,24 +50,6 @@ function ProjectCard({
                     {description}
                 </p>
                 <p className="text-xs text-yellow-400">{tech}</p>
-            </div>
-
-            <div className="flex gap-4 mt-6 text-sm">
-                <a
-                    href={github}
-                    target="_blank"
-                    className="px-4 py-2 border border-slate-600 rounded-lg hover:bg-slate-800 transition"
-                >
-                    GitHub
-                </a>
-
-                <a
-                    href={live}
-                    target="_blank"
-                    className="px-4 py-2 bg-yellow-400 text-black rounded-lg hover:bg-yellow-300 transition"
-                >
-                    Live Demo
-                </a>
             </div>
         </motion.div>
     );
